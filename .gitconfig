@@ -486,3 +486,10 @@
 
 [include]
   path = .gitconfig.extra
+
+[pull]                                                                           
+  rebase = true                                                                  
+                                                                                 
+[user]                                                                           
+    email = byhashdong@protonmail.com                                            
+    name = byhashdong     
