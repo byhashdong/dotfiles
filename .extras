@@ -1,0 +1,11 @@
+export DOTFILESSRCDIR="/home/terry/Tools/dotfiles/"
+
+GIT_AUTHOR_NAME="byhashdong"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --file=$HOME/.gitconfig.extra user.name "$GIT_AUTHOR_NAME"
+
+GIT_AUTHOR_EMAIL="byhashdong@protonmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --file=$HOME/.gitconfig.extra user.email "$GIT_AUTHOR_EMAIL"
+
+git config --file=$HOME/.gitconfig.extra push.default simple
