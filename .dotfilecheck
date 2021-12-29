@@ -15,7 +15,8 @@ if [[ ${MOD} != "${CUR}" ]]; then
   touch "$HOME/.dotfilecheck"
 
   if [[ -z $DOTFILESSRCDIR ]]; then
-    error "DOTFILESSRCDIR not set. It must point to the git based source directory of dotfiles"
+    #error "DOTFILESSRCDIR not set. It must point to the git based source directory of dotfiles"
+    exit
   else
     (
       cd "$DOTFILESSRCDIR"
