@@ -16,7 +16,8 @@ if [[ ${MOD} != "${CUR}" ]]; then
 
   if [[ -z $DOTFILESSRCDIR ]]; then
     #error "DOTFILESSRCDIR not set. It must point to the git based source directory of dotfiles"
-    exit
+    # This file is sourced by the login shell; exit would close SSH sessions.
+    return 0
   else
     (
       cd "$DOTFILESSRCDIR"
